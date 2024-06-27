@@ -1,6 +1,6 @@
 # Link Checker
 
-A python tool to check the validity of URLs in bibliographic records.
+A python3 tool to check the validity of URLs in bibliographic records.
 
 Sample output:
 ```
@@ -20,7 +20,11 @@ Given `input.csv` is a CSV file of links to check, containing headers `record` (
 
 ## Installation
 
-Use python to install requirements.
+Use pip to install the required libraries:
+
+```python
+pip install -r requirements.txt
+```
 
 
 ## Workflow
