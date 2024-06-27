@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
+import argparse
 import db
 import requests
 
-db_file = 'data.sqlite'
+
+def parse_cmd_line():
+    parser = argparse.ArgumentParser(description="Output a report of checked links. Outputs to 'results-[current_time].csv'",
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("-d", "--database", default="data.sqlite",
+                        help="sqlite database file to populate.")
+    args = parser.parse_args()
+    return args.database
 
 
 def resolve_link(url):
@@ -19,6 +27,7 @@ def get_final_url(r):
 
 
 def main():
+    db_file = parse_cmd_line()
     database = db.DB(db_file)
 
     # Check links, a batch at a time.
