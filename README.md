@@ -36,7 +36,11 @@ The general workflow is:
 
 ### CSV Loader
 
-If you already have a spreadsheet of the links to check, use `csvLoader.py` to add them to the links table. The input csv must have columns `record` and `url`. If an existing entry exists in the link table with identical `record` and `url` then the link will not be added. The path to the csv file is added on the command line as an argument (i.e. without option identifiers):
+If you already have a spreadsheet of the links to check, use `csvLoader.py` to 
+add them to the links table. The input csv must have columns `record` and `url`.
+If an existing entry exists in the link table with identical `record` and `url` 
+then the link will not be added. The path to the csv file or files is given on 
+the command line as a positional argument:
 
 ```bash
 ./csvLoader.py input.csv
@@ -44,7 +48,10 @@ If you already have a spreadsheet of the links to check, use `csvLoader.py` to a
 
 ### Bib ID Loader
 
-If you are using Evergreen, then you can provide a list of id's of records. They can be in a .txt or .csv file, but they must be in the first column if it is a csv. A value of `id` (i.e. a header from a database export of bib id's) will be ignored. The file name must be provided as a command line argument (i.e. without option identifiers):
+If you are using Evergreen, then you can provide a list of id's of records. They
+can be in a .txt or .csv file, but they must be in the first column if it is a 
+csv. A header for the column of bib ids, if it exists, bust equal `id`. The 
+file name or names must be provided as a command line positional argument:
 
 ```bash
 ./bibidLoader.py ids.txt
@@ -54,7 +61,9 @@ If you are using Evergreen, then you can provide a list of id's of records. They
 
 ### Database name
 
-Some functions (determine which by running --help) can take the database name as an option. By default the database is `data.sqlite`.
+By default, the data will be stored in a database file called `data.sqlite`. 
+This can be configured using the `-d` or `--database` option on the command 
+line.
 
 ## Authors
 
