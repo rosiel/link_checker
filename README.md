@@ -10,7 +10,7 @@ id,record,url,status_code,final_url,timestamp
 
 ## Quick Usage
 
-With a csv file, `input.csv` in this directory, containing headers `record` (the record ID) and `url` (the link):
+Given `input.csv` is a CSV file of links to check, containing headers `record` (the record ID) and `url` (the link) (see below for other options):
 
 ```bash
 ./csvLoader.py input.csv    # Populates the database, data.sqlite, with links to check.

@@ -1,4 +1,4 @@
-#!/Users/rlefaive/.venv/bin/python
+#!/usr/bin/env python3
 import csv
 import datetime
 import db
