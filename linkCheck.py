@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import requests
 import db
+import requests
 
 db_file = 'data.sqlite'
 

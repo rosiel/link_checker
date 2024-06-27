@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import optparse
 import csv
-import os
 import db
+import optparse
+import os
 
 
 def parse_cmd_line():

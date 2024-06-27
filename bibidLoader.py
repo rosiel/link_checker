@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import csv
+import db
 import optparse
 import os
-import db
-import xml.etree.ElementTree as ET
 import requests
+import xml.etree.ElementTree as ET
 
 
 def get_links_for_bibid(bibid):
