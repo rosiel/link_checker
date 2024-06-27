@@ -2,7 +2,7 @@
 import argparse
 import csv
 import datetime
-import db
+import link_checker.db as db
 
 fieldnames = ['id', 'record', 'url', 'status_code', 'final_url', 'timestamp']
 

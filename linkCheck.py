@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import argparse
-import db
+import link_checker.db as db
 import requests
 
 

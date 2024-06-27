@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import csv
-import db
+import link_checker.db as db
 import os
 import requests
 import xml.etree.ElementTree as ET
