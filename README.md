@@ -50,7 +50,7 @@ the command line as a positional argument:
 
 If you are using Evergreen, then you can provide a list of id's of records. They
 can be in a .txt or .csv file, but they must be in the first column if it is a 
-csv. A header for the column of bib ids, if it exists, bust equal `id`. The 
+csv. A header for the column of bib ids, if it exists, must equal `id`. The 
 file name or names must be provided as a command line positional argument:
 
 ```bash
